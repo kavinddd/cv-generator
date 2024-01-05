@@ -1,0 +1,118 @@
+
+
+.generated-csv {
+    width: 595px;
+    height: 842px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.personal-information,
+.educational-information,
+.practical-information {
+    padding: 20px 40px;
+}
+
+.cv-header, .fullname{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.personal-information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: space-evenly;
+}
+
+/* personal infomation */
+
+.fullname {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+
+.email {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: end;
+}
+.phone-number {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.phone-number::before {
+    content: " | "
+}
+
+/* Education */
+.educational-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.educational-information .cv-header {
+    grid-column: 1 / 3;
+}
+
+.school-name {
+    grid-column: 1 / 3
+}
+
+.school-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.date {
+    justify-self: center;
+}
+
+/* Pratical */
+.practical-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.practical-information .cv-header {
+    grid-column: 1 / 3;
+}
+
+
+.position {
+    grid-column: 1 / 2;
+}
+
+.responsibilities {
+    margin: 0;
+    grid-column: 1 / 3;
+
+}
+
+.title {
+    grid-column: 1 / 2;
+}
+
+.duration {
+    justify-self: center;
+    grid-column : 2/ 3;
+    grid-row: 3/4;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+

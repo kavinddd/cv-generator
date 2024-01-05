@@ -1,0 +1,17 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-container {
+  grid-column: 1 / 2;
+}
+
+.generated-cv-container {
+  grid-column: 2 / 3;
+  display: grid;
+  place-items: center;
+}
+
+
+

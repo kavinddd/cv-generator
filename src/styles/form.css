@@ -1,0 +1,70 @@
+
+.form-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    
+}
+
+div.form-control {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    place-items: start;
+    gap: 15px;
+    padding: 0px 20px;
+    align-items: center;
+}
+label {
+    grid-column: 1 / 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label::after{
+    content: ": ";
+    letter-spacing: 1px;
+}
+
+input {
+    grid-column: 2 / 3;
+    justify-self: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+
+button {
+    grid-column: 2 / 3;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    justify-self: end;
+    margin-right: 20%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+button:hover {
+    color: grey;
+    transform: scale(1.1);
+}
+
+
+form{
+    margin: 20px 30px;
+    border: 1px solid rgba(100, 98, 98, 0.547);
+    border-radius: 50px;
+    padding: 30px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
