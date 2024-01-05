@@ -1,5 +1,3 @@
-
-
 .generated-csv {
     width: 595px;
     height: 842px;
@@ -43,18 +41,11 @@
     font-size: 1.6rem;
 }
 
-.email {
-    grid-column: 1 / 2;
+.email-phonenum {
+    grid-column: 1 / 3;
     grid-row: 2 / 3;
-    justify-self: end;
-}
-.phone-number {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.phone-number::before {
-    content: " | "
+    display: flex;
+    justify-content: center;
 }
 
 /* Education */

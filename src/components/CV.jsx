@@ -18,8 +18,7 @@ export default function CV({
     <div className="generated-csv">
       <div className="personal-information">
         <p className="fullname"> {firstName + " " + lastName}</p>
-        <span className="email"> {email} </span>
-        <span className="phone-number"> {phoneNumber} </span>
+        <span className="email-phonenum"> {email} | {phoneNumber} </span>
       </div>
       <div className="educational-information">
         <p className="cv-header"> Education </p>
